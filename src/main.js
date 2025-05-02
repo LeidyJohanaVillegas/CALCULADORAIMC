@@ -19,7 +19,7 @@ function calcular(peso, estat){
 //funcion principal
 function calcularIMC() {
   //Datos
-  const name = document.getElementById('name').value.trim();
+  const name = document.getElementById('name').value.trim();//trim() sirve para eliminar los espacios al inivio o al final del texto
   const age = parseInt(document.getElementById('age').value);
   const peso = parseFloat(document.getElementById('peso').value);
   const estat = parseFloat(document.getElementById('estat').value);
@@ -34,19 +34,19 @@ function calcularIMC() {
   let MJS, img;
   if (IMC < 18.5) {
     MJS = MJS1;
-    img = "../public/img/pesoInferiorNormal.png"
+    img = "./public/img/pesoInferiorNormal.png"
   } else if (IMC >= 18.5 && IMC <= 24.9) {
     MJS = MJS2;
-    img = "../public/img/pesoNormal.png"
+    img = "./public/img/pesoNormal.png"
   } else if (IMC >= 25.0 && IMC <= 29.9) {
     MJS = MJS3;
-    img = "../public/img/pesoSuperiorNormal.png"
+    img = "./public/img/pesoSuperiorNormal.png"
   } else if (IMC >= 30.0 && IMC <= 34.9) {
     MJS = MJS4;
-    img = "../public/img/Obeso.png"
+    img = "./public/img/Obeso.png"
   } else {
     MJS = MJS5;
-    img = "../public/img/hiperobeso.png"
+    img = "./public/img/hiperobeso.png"
   }
   //Guardar Registro
   pacientes.push({ name, age, peso, estat, IMC, MJS }); 
