@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <!--defer para que se cargue después del HTML -->
+    <script src="./src/main.js" defer></script>
+    <title>Calculadora IMC</title>
+  </head>
+  <body>
+
+    <!-- Formulario para la calculadora-->
+    <form >
+      
+      <h1>Calculadora IMC</h1>
+
+      <!--Datos-->
+      <div class="input-row">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Nombre completo." required/>
+        <label for="age">Edad:</label>
+        <input type="number" id="age" name="age" placeholder="Digita tu edad." required/>
+      </div>
+
+      <div class="input-row">
+        <label for="peso">Peso:</label>
+        <input type="number" id="peso" name="peso" placeholder="Tu peso en Kg." required/>
+        <label for="estatura">Estatura:</label>
+        <input type="number" id="estat" name="estatura" placeholder="Tu estatura en cm." required/>
+      </div>
+
+      <!--Botones-->
+      <div class="buttonrow">
+        <button type="button" id="btnNew">Nuevo</button>
+        <button type="button" id="btnCal">Calcular</button>
+      </div>
+    </form>
+
+    <!--Resultados-->
+    <div id="card">
+      <h2>Bienvenido</h2>
+      <p id="nameResult"></p>
+      <p id="ageResult"></p>
+      <p id="IMC"></p>
+      <p id="MJS"></p>
+      <p id="img"></p>
+    </div>
+  </body>
+</html>
