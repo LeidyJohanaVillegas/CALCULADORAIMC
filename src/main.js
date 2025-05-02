@@ -29,7 +29,7 @@ function calcularIMC() {
     return;
   }
   //Conociendo el Indice de Masa Corporal 
-  let IMC = calcular()
+  let IMC = calcular(peso, estat);
   //Clasificacion
   let MJS, img;
   if (IMC < 18.5) {
